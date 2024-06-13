@@ -1,0 +1,20 @@
+.titleInput {
+    border-color: slateblue;
+    border-radius: 5px;
+    width: 30%;
+    height: 25px;
+    margin-top: 15px;
+}
+
+.postCard {
+    width: 85%;
+    height: 100%;
+    margin: 50px
+}
+
+textarea {
+    border-color: slateblue;
+    border-radius: 5px;
+    width: 30%;
+    height:10rem;
+}

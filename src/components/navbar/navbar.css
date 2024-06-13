@@ -1,0 +1,47 @@
+.navbar {
+    width: 100%;
+    height: 110px;
+    background-color: mistyrose;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo p{
+    font-size: 30px;
+    color: slateblue;
+    margin-left: 20px;
+}
+
+.navbar .links {
+    text-align: end;
+    margin-right: 50px;
+}
+
+.links a {
+    color: deeppink;
+    text-decoration: none;
+    padding-bottom: 2px;
+    margin: 10px;
+    font-size: 30px;
+
+
+}
+.navbar .user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    font-size: 30px;
+    color: slateblue;
+}
+
+.navbar img {
+    margin-left: 10px;
+    border-radius: 15px;
+}
