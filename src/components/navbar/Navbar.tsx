@@ -15,7 +15,7 @@ export const Navbar = () => {
 
     return <div className="navbar">
         <div className="logo">
-            <img src={logo} width="100" height="90" />
+            <img src={logo} width="100" height="90" alt="logo"/>
             <p>Home Recipes</p>
         </div>
 
@@ -23,7 +23,7 @@ export const Navbar = () => {
 
             <Link to="/">Home</Link>
             {!user ?<Link to="/login">Login</Link>
-                : <Link to="/myRecipes">My Recipes</Link>
+                : <Link to="/myRecipes">Add Recipes</Link>
             }
 
         </div>
@@ -32,7 +32,7 @@ export const Navbar = () => {
             {user &&
                 <>
                 <p> {user?.displayName}</p>
-            <img src={user?.photoURL || ""} width="50" height="50"/>
+            <img src={user?.photoURL || ""} width="50" height="50" alt="user"/>
             <button onClick={logOut}> Log out</button>
                 </>
             }

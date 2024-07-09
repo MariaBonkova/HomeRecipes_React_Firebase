@@ -81,14 +81,21 @@ export const Post = (props: Props) => {
 
     return (
         <div className="postCard">
+
             <div className="title">
                 <h1>{post.title}</h1>
             </div>
+            <div className="editRemoveBtn">
+                <button>Edit</button>
+                <button>Remove</button>
+            </div>
+
             <div>
                 <p>{post.ingredients}</p>
             </div>
             <div className="body">
                 <p>{post.description}</p>
+
                 <p style={{cursor: "pointer"}}
                    onClick={hasUserLiked ? removeLike : addLike}>
                     {hasUserLiked ? <>&#128078;</> : <>&#128077;</>}

@@ -11,6 +11,7 @@ interface CreateFormData {
     title: string,
     ingredients:string
     description: string,
+    image:string
 
 }
 export const CreateRecipeForm = () => {
@@ -21,6 +22,8 @@ export const CreateRecipeForm = () => {
         title: yup.string().required("Title is required"),
         ingredients: yup.string().required("Ingredients is required"),
         description: yup.string().required("Description is required"),
+        image:yup.string().required("Image is needed"),
+
 
     })
 
